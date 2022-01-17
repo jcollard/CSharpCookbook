@@ -13,8 +13,6 @@ consider breaking your decision down into smaller components and using
   - [A simple If Statement](#a-simple-if-statement)
   - [If / Else Statement](#if--else-statement)
   - [If / Else-If Statements](#if--else-if-statements)
-    - [Using an Else-if When You Should Use a Second If](#using-an-else-if-when-you-should-use-a-second-if)
-    - [Using an If When You Should Use an Else-If](#using-an-if-when-you-should-use-an-else-if)
 
 ## A simple If Statement
 
@@ -245,7 +243,7 @@ else
 DisplayMovies(age);
 ```
 
-### Using an Else-if When You Should Use a Second If
+### Using an Else-if When You Should Use a Second If <!-- omit in toc -->
 
 Often times, we will want to have two if statements that follow each other.
 Beginning programmers will often always add `else` statements if there are two
@@ -271,7 +269,7 @@ else if (age >= 13)
 DisplayMovies(canSeePG13, canSeeR);
 ```
 
-### Using an If When You Should Use an Else-If
+### Using an If When You Should Use an Else-If <!-- omit in toc -->
 
 Similar to using an `else if` when you should use an `if`, it is not uncommon to
 use two sequential `if` statements when you should be using an `else if`
