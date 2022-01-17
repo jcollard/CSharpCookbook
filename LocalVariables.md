@@ -14,7 +14,7 @@ This section discusses local variables.
 
 ## Declaring a Local Variable
 
-Declaring the variable is the process of creating a location in memory to store
+Declaring a variable is the process of creating a location in memory to store
 data and giving that location a name. In C#, you must also specify the type of
 data that will be stored in that location.
 
@@ -45,7 +45,8 @@ Random generator; // Declare a "Random" named generator
 
 ## Assigning a Variable
 
-Assigning a variable is the process of storing
+Assigning a variable is the process of storing data in memory at the location
+associated with the variable.
 
 ### Recipe <!-- omit in toc --> 
 
@@ -77,8 +78,8 @@ generator = new Random(); // Construct a new random generator and assign it to g
   declared`
 
 * The variable being assigned must be in scope. If this isn't the case, you will
-  receive an error something like this: `CS0103: The name '<variable-name>' does
-  not exist in the current context`. This often is caused by:
+  likely receive an error similar to this: `CS0103: The name '<variable-name>' does
+  not exist in the current context`. This is often caused by:
   * A typo in the variable name.
   * The variable being declared within the body of an if statement or loop
   * The variable being declared in a different method
@@ -90,9 +91,9 @@ generator = new Random(); // Construct a new random generator and assign it to g
 
 ## Declare and Initialize a Variable
 
-Initializing a variable is occurs the first time you assign a value to a
-variable. This is so common that it is possible to both declare and initialize a
-variable in a single statement.
+Initializing a variable is the process of assigning a variable for the first
+time. It is so common to initialize a variable after declaring it that there is
+special syntax for declaring and initializing a variable in a single statement.
 
 ### Recipe <!-- omit in toc --> 
 
