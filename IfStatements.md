@@ -7,7 +7,7 @@ Additionally, you can string multiple `if-else-if` statements together to create
 complex branching selections. However, be careful when doing this as it become
 unruly to manage if you have too many conditions. When this happens, you should
 consider breaking your decision down into smaller components and using
-[Methods](Methods.md) to manage the complexity.
+one ore more methods to manage the complexity.
 
 - [C Sharp Cookbook: If Statements](#c-sharp-cookbook-if-statements)
   - [A simple If Statement](#a-simple-if-statement)
@@ -60,9 +60,8 @@ the body of the if statement.
 
 #### Adding a Semi-colon <!-- omit in toc -->
 
-Adding a semi-colon `;` at the end of the if statement. C# is happy to let you
-add a `;` at the end of an if statement. This means the body of that if
-statement is empty! For example:
+C# is happy to let you add a `;` at the end of an if statement. This means the
+body of that if statement is empty! For example:
 
 ```csharp
 if (hasKey); // Ooops, semi-colon
@@ -75,8 +74,7 @@ if (hasKey); // Ooops, semi-colon
 
 #### Forgetting Curly Brackets <!-- omit in toc -->
 
-Forgetting to add curly brackets `{`, `}` around the body of the if statement.
-It turns out you can have a single statement as a body in an if statement. You
+It turns out you can have a single statement as the body of an if statement. You
 must explicitly use curly brackets if you would like to have more than one
 statement. It is considered bad practice to use single-statement bodies for if
 statements. For example:
@@ -91,8 +89,8 @@ if (hasKey)
 
 During error checking, we often check a condition and throw an exception at the
 start of a method. It can help with readability to use single-statement bodies
-in this case. When you do this, the body of the if statement should **always**
-be on the same line as the if statement. For example:
+in this situation. When you do this, the body of the if statement should **always**
+be on the same line as the if statement to add clarity for the reader. For example:
 
 ```csharp
 public static string CheckGuess(string guess)
@@ -141,23 +139,24 @@ DisplayMovies(age);
 * An `else` statement must immediately follow the body of an if statement. If
   you do not do this, you will likely receive this error: `error CS8641: 'else'
   cannot start a statement.`
-  * This often occurs if the preceding if statements curly brackets are incorrect.
+  * This often occurs if the preceding if statement's curly brackets are incorrect.
 
 ### Common Mistakes <!-- omit in toc -->
 
 Just like with if statements, there are two common mistakes that beginners will
 make when writing else statements that will not manifest in an error message but
-will result in an incorrect result: Using a semi-colon at the end of an if
-statement and not using curly brackets to denote the body of the if statement.
+will result in an incorrect result: Using a semi-colon at the end of an else
+statement and not using curly brackets to denote the body of the else statement.
 
 ## If / Else-If Statements
 
-It can be useful to be able to several possible outcomes based on more than one
+It can be useful to be able to have several possible outcomes based on more than one
 boolean expression. This can be accomplished by following the else keyword with
 an if statement. Doing this is called an else-if statement. 
 
 **Note**: This can be done any number of times. However, if you find yourself
-writing more than 4 options, consider breaking your logic into multiple methods.
+writing more than 4 options, consider writing one or more methods to help manage
+the complexity.
 
 ### Recipe  <!-- omit in toc -->
 
@@ -208,7 +207,7 @@ DisplayMovies(age);
 
 ### Common Mistakes <!-- omit in toc -->
 
-There are three common mistake that will not manifest that will not result in an error message
+There are three common mistake that will not manifest in an error message
 but will result in incorrect behavior: Ordering your else if statements
 incorrectly, using an `else if` when you should use a second `if`, and using an
 `if` when you should use an `else if`.
