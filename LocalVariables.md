@@ -6,6 +6,12 @@ location in memory.
 In C#, there are two types of variables: local variables and member variables.
 This section discusses local variables.
 
+- [C Sharp Cookbook: Local Variables](#c-sharp-cookbook-local-variables)
+  - [Declaring a Local Variable](#declaring-a-local-variable)
+  - [Assigning a Variable](#assigning-a-variable)
+  - [Declare and Initialize a Variable](#declare-and-initialize-a-variable)
+  - [Accessing a Variable](#accessing-a-variable)
+
 ## Declaring a Local Variable
 
 Declaring the variable is the process of creating a location in memory to store
@@ -15,13 +21,13 @@ data that will be stored in that location.
 * A local variable is a variable that is declared within the body of a method. 
 * A local variable is only accessible within the method it was declared.
 
-### Recipe
+### Recipe <!-- omit in toc --> 
 
 ```csharp
 <variable-type> <variable-name>;
 ```
 
-### Examples
+### Examples <!-- omit in toc --> 
 
 ```csharp
 int age; // Declare an integer named age
@@ -30,7 +36,7 @@ List<int> guesses; // Declare a list of integers named guesses
 Random generator; // Declare a "Random" named generator
 ```
 
-### Common Errors
+### Common Errors <!-- omit in toc --> 
 
 * A variable must have a unique name for the given scope. If you create a
   variable that has a conflicting name, you will receive an error that looks
@@ -41,13 +47,13 @@ Random generator; // Declare a "Random" named generator
 
 Assigning a variable is the process of storing
 
-### Recipe
+### Recipe <!-- omit in toc --> 
 
 ```csharp
 <variable-name> = <expression>;
 ```
 
-### Examples
+### Examples <!-- omit in toc --> 
 
 ```csharp
 int sum;
@@ -63,7 +69,7 @@ Random generator;
 generator = new Random(); // Construct a new random generator and assign it to generator
 ```
 
-### Common Errors
+### Common Errors <!-- omit in toc --> 
 
 * The variable must be declared before it can be assigned. If you try to assign
   a variable before declaring it, you will receive an error similar to this:
@@ -88,13 +94,13 @@ Initializing a variable is occurs the first time you assign a value to a
 variable. This is so common that it is possible to both declare and initialize a
 variable in a single statement.
 
-### Recipe
+### Recipe <!-- omit in toc --> 
 
 ```csharp
 <variable-type> <variable-name> = <expression>;
 ```
 
-### Examples
+### Examples <!-- omit in toc --> 
 
 ```csharp
 int age = 14; // Declare and initialize age to store the value 14
@@ -102,7 +108,7 @@ float score = GetScore() + GetExtraCredit(); // Declare and initialize score to 
 List<bool> answers = new List<bool>(); // Declare and initialize answers to be a new list.
 ```
 
-### Common Errors
+### Common Errors <!-- omit in toc --> 
 
 See: [Declaring a Local Variable](#declaring-a-local-variable)
 
@@ -111,7 +117,7 @@ See: [Declaring a Local Variable](#declaring-a-local-variable)
 Accessing a variable is the process of retrieving the data stored in the memory
 associated with a variable. 
 
-### Recipe
+### Recipe <!-- omit in toc --> 
 
 As part of an expression:
 
@@ -119,7 +125,7 @@ As part of an expression:
 <variable-name>
 ```
 
-### Examples
+### Examples <!-- omit in toc --> 
 ```csharp
 Console.Write("Enter an integer: ");
 int x = int.Parse(Console.ReadLine());
@@ -135,7 +141,7 @@ string name = Console.ReadLine();
 Console.WriteLine($"Nice to meet you {name}!"); // Access the value stored in name and interpolate it in a string.
 ```
 
-### Common Errors
+### Common Errors <!-- omit in toc --> 
 
 * A variable cannot be used as a statement. If you do this, you will receive an
   error that looks like this: `error CS0201: Only assignment, call, increment,

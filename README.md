@@ -7,6 +7,11 @@ as common error messages.
 This Cookbook is a work in progress! Feel free to make suggestions, open Issues,
 and create Pull Requests.
 
+- [C# Cookbook](#c-cookbook)
+  - [Common Errors](#common-errors)
+  - [Local Variables](#local-variables)
+  - [If Statements](#if-statements)
+
 ## [Common Errors](CommonErrors.md)
 
 This is a collection of all the errors that appear in this Cookbook. If you have

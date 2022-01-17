@@ -1,5 +1,9 @@
 # Common Errors
 
+This is a collection of all the errors that appear in this Cookbook. If you have
+an error message, you can look it up by it's error number here and find links to
+relevant sections within the Cookbook.
+
 * CS0029: `Cannot implicitly convert type '<expression-type>' to
   '<variable-type>'`
   *  See: [Local Variables](LocalVariables.md) 
