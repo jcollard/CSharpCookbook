@@ -27,3 +27,7 @@ In C#, there are two types of variables: local variables and member variables.
 This section discusses local variables.
 
 ## [If Statements](IfStatements.md)
+
+An if statement is a programming construct that we use to create selections
+within a program. Closely coupled with the `if` statement is the `else`
+statement which can be used to create a "this" or "that" selection.
