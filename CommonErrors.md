@@ -6,7 +6,7 @@ relevant sections within the Cookbook.
 
 * CS0029: `Cannot implicitly convert type '<expression-type>' to
   '<variable-type>'`
-  *  See: [Local Variables](LocalVariables.md) 
+  *  See: [Local Variables](LocalVariables.md) | [If Statements](IfStatements.md)
 * CS0103: `The name '<variable-name>' does not exist in the current context`
   * See: [Local Variables](LocalVariables.md) 
 * CS0128: `A local variable or function named 'VARIABLE_NAME' is already defined
