@@ -19,3 +19,5 @@ relevant sections within the Cookbook.
   * See: [Local Variables](LocalVariables.md)
 * CS0841: `Cannot use local variable '<variable-name>' before it is declared`
   * See: [Local Variables](LocalVariables.md)
+* CS8641: `'else' cannot start a statement.`
+  * See: [If Statements](IfStatements.md)
