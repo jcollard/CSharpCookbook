@@ -141,7 +141,7 @@ programmers will unintentionally write an infinite loop. In the two examples
 above, we demonstrated two ways in which infinite loops can occur. However,
 there are countless ways to unintentionally write an infinite loop. When this
 occurs, you can press `CTRL+C` in the terminal to interrupt the program and ask
-it to exit. Sometimes, you may have to press this multiple times. And in rare
+it to exit. Sometimes, you may have to press this multiple times. In rare
 cases, this will not work.
 
 ## For Loop
