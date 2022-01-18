@@ -46,7 +46,7 @@ Console.WriteLine($"Nice to meet you, {name}.");
 
 * The `<boolean-expression>` must in fact result in a `boolean`. If this is not
   the case, you will receive an error similar to this: `error CS0029: Cannot
-  implicitly convert type 'string' to 'bool'`
+  implicitly convert type '<data-type>' to 'bool'`
   * Often times this occurs when you are checking for equality and use the
     assignment operator (`=`) rather than the equality operator (`==`)
 
