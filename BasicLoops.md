@@ -147,8 +147,8 @@ cases, this will not work.
 ## For Loop
 
 It is very common in programming to write a loop which iterates through a
-sequence of numbers. The [Printing Out Integers Between Two
-Values](#printing-out-integers-between-two-values) in the while loop section
+sequence of numbers. The example, [Printing Out Integers Between Two
+Values](#printing-out-integers-between-two-values), in the while loop section
 above demonstrates how to do this with a while loop. However, this is so common
 that there is special syntax for doing this called a `for` loop.
 
