@@ -11,6 +11,7 @@ and create Pull Requests.
   - [Common Errors](#common-errors)
   - [Local Variables](#local-variables)
   - [If Statements](#if-statements)
+  - [Basic Loops](#basic-loops)
 
 ## [Common Errors](CommonErrors.md)
 
@@ -63,7 +64,7 @@ else // The final else statement is optional
 // All branches continue executing at the end of the decision tree.
 ```
 
-## [Basic Loops](BasicLoops.md) <!-- omit in toc --> 
+## [Basic Loops](BasicLoops.md) 
 
 There are three types of basic loops in C#: `while`, `for`, and `do`...`while`
 loops.
