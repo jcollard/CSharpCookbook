@@ -8,6 +8,8 @@ relevant sections within the Cookbook.
   '<variable-type>'`
   *  See: [Local Variables](LocalVariables.md) | [If
      Statements](IfStatements.md) | [Basic Loops](BasicLoops.md)
+* CS0030: `Cannot convert type 'int' to 'string'`
+  * See: [For Each Loops](ForEachLoops.md)
 * CS0103: `The name '<variable-name>' does not exist in the current context`
   * See: [Local Variables](LocalVariables.md) | [Basic Loops](BasicLoops.md)
 * CS0128: `A local variable or function named 'VARIABLE_NAME' is already defined
@@ -20,5 +22,9 @@ relevant sections within the Cookbook.
   * See: [Local Variables](LocalVariables.md)
 * CS0841: `Cannot use local variable '<variable-name>' before it is declared`
   * See: [Local Variables](LocalVariables.md)
+* CS1579: `foreach statement cannot operate on variables of type '<data-type-1>'
+  because '<data-type-2>' does not contain a public instance or extension
+  definition for 'GetEnumerator'`
+  * See: [For Each Loops](ForEachLoops.md)
 * CS8641: `'else' cannot start a statement.`
   * See: [If Statements](IfStatements.md)

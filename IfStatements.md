@@ -178,7 +178,6 @@ else // The final else statement is optional
 {
     // Body to execute if all boolean-expressions are false.
 }
-
 // All branches continue executing at the end of the decision tree.
 ```
 

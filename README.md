@@ -12,6 +12,7 @@ and create Pull Requests.
   - [Local Variables](#local-variables)
   - [If Statements](#if-statements)
   - [Basic Loops](#basic-loops)
+  - [For Each Loops](#for-each-loops)
 
 ## [Common Errors](CommonErrors.md)
 
@@ -89,9 +90,17 @@ do  // Do ... While loop
 while (<boolean-expression>);
 ```
 
-## [For Each Loops](ForEachLoops.md) <!-- omit in toc --> 
+## [For Each Loops](ForEachLoops.md)
 
-TODO:
+It is so common to iterate over each element in a list or other collection type that C# provides a
+special `foreach` loop to accomplish this.
+
+```csharp
+foreach (<variable-type> <variable-name> in <iterable>)
+{
+    // Body to be executed for each element
+}
+```
 
 ## [Lists](Lists.md) <!-- omit in toc --> 
 
