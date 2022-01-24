@@ -110,6 +110,18 @@ logical chunks that can be "called". In this section, we will see the recipe for
 `public static` methods which are roughly equivalent to functions in other
 programming languages.
 
+```csharp
+// Declaring a public static method
+public static <return-type> <method-name>(<method-parameters>)
+{
+    // Body of the method
+}
+
+// Calling a public static method
+// Within an expression:
+<method-name>(<method-arguments>);
+```
+
 
 ## [Lists](Lists.md) <!-- omit in toc --> 
 
