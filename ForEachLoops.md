@@ -3,6 +3,16 @@
 It is so common to iterate over each element in a list or other collection type that C# provides a
 special `foreach` loop to accomplish this.
 
+- [For Each Loops](#for-each-loops)
+  - [For Each Loop](#for-each-loop)
+    - [Recipe](#recipe)
+    - [Examples](#examples)
+      - [Find the Highest Score](#find-the-highest-score)
+      - [Find the Longest Name](#find-the-longest-name)
+    - [Common Errors](#common-errors)
+    - [Common Mistakes](#common-mistakes)
+      - [Modifying the collection you are iterating over](#modifying-the-collection-you-are-iterating-over)
+
 ## For Each Loop
 
 A `foreach` loop iterates over the elements of a list or other collection type.

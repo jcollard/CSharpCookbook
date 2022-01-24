@@ -13,6 +13,7 @@ and create Pull Requests.
   - [If Statements](#if-statements)
   - [Basic Loops](#basic-loops)
   - [For Each Loops](#for-each-loops)
+  - [Static Methods](#static-methods)
 
 ## [Common Errors](CommonErrors.md)
 
@@ -102,6 +103,14 @@ foreach (<variable-type> <variable-name> in <iterable>)
 }
 ```
 
+## [Static Methods](StaticMethods.md)
+
+Methods provide a way to manage the complexity of a program by breaking it into
+logical chunks that can be "called". In this section, we will see the recipe for
+`public static` methods which are roughly equivalent to functions in other
+programming languages.
+
+
 ## [Lists](Lists.md) <!-- omit in toc --> 
 
 TODO:
@@ -110,9 +119,6 @@ TODO:
 
 TODO:
 
-## [Static Methods](StaticMethods.md) <!-- omit in toc --> 
-
-TODO:
 
 ## Custom Data Types <!-- omit in toc --> 
 
