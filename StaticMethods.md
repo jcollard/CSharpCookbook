@@ -20,6 +20,11 @@ without requiring the reader to understand the underlying logic.
     - [Recipe](#recipe-1)
     - [Example](#example-1)
     - [Common Errors](#common-errors-1)
+  - [More Examples](#more-examples)
+    - [Breaking a Complex Method into Smaller Methods](#breaking-a-complex-method-into-smaller-methods)
+      - [A Single Method TODO List Program](#a-single-method-todo-list-program)
+      - [A Multi-Method TODO List Program](#a-multi-method-todo-list-program)
+      Methods](#breaking-a-complex-method-into-smaller-methods)
 
 ## Declaring a Public Static Method
 
@@ -125,3 +130,120 @@ health = Min(maxHealth, health); // Ensures the players health does not go above
       * `error CS1501: No overload for method 'MethodName' takes <num> arguments`
     * Calling a `non-static` method will result in the following error message. This usually means you forgot to put the keyword `static` on the method.
       * `error CS0120: An object reference is required for the non-static field, method, or property 'ClassName.MethodName(<method-arameter-types>)'`
+
+## More Examples
+
+### Breaking a Complex Method into Smaller Methods
+
+As you write a program, you will often find your methods growing in size and
+complexity. A good rule to follow is to keep methods short and concise. If a
+method does not fit on a single screen (10 - 20 lines) consider breaking it into
+smaller methods.
+
+#### A Single Method TODO List Program
+
+The following shows how you might write a todo list manager using one long
+method. Notice how long the method is and how complex the code becomes as we add
+more options.
+
+```csharp
+List<string> todoList = LoadList();
+
+Console.WriteLine("Welcome to the TODO List!");
+
+while (true)
+{
+    Console.WriteLine("Select from one of the following options: ");
+    Console.WriteLine("1. Display TODO List");
+    Console.WriteLine("2. Add Item to TODO List");
+    Console.WriteLine("3. Remove Item from TODO List");
+    Console.WriteLine("4. Save List");
+    Console.WriteLine("5. Exit");
+
+    int option = int.Parse(Console.ReadLine());
+
+    if (option == 1)
+    {
+        int ix = 1;
+        foreach (string item in todoList)
+        {
+            Console.WriteLine($"{ix}. {item}");
+        }
+    }
+    else if (option == 2)
+    {
+        Console.Write("Enter an item to add: ");
+        string newItem = Console.ReadLine();
+        todoList.Add(newItem);
+    }
+    else if (option == 3)
+    {
+        if (todoList.Count == 0)
+        {
+            Console.WriteLine("The list is already empty.");
+        }
+        else
+        {
+            Console.WriteLine("Which item would you like to remove? Enter a number between 1 and ");
+            // TODO: This is getting pretty long. How do I test this?
+        }
+    }
+    else if (option == 4)
+    {
+        // TODO: WOW, this is getting complex
+    }
+    else if (option == 5)
+    {
+        // TODO: Yikes... I already have more than 50 lines of code!
+    }
+    else
+    {
+        Console.WriteLine("That is not a valid option.");
+    }
+}
+```
+
+#### A Multi-Method TODO List Program
+
+The following program creates a TODO List program utilizing several methods to
+make the program easier to understand at a glance. Additionally, it makes it
+much easier to work on and debug each of the pieces of functionality in isolation.
+
+```csharp
+List<string> todoList = LoadList();
+
+Console.WriteLine("Welcome to the TODO List!");
+
+while (true)
+{
+    DisplayOptions();
+
+    int option = int.Parse(Console.ReadLine());
+
+    if (option == 1)
+    {
+        DisplayList(todoList);
+    }
+    else if (option == 2)
+    {
+        AddItem(todoList);
+    }
+    else if (option == 3)
+    {
+        RemoveItem(todoList);
+    }
+    else if (option == 4)
+    {
+        SaveList(todoList);
+    }
+    else if (option == 5)
+    {
+        Console.WriteLine("Have a great day!");
+        break;
+    }
+    else
+    {
+        Console.WriteLine("That is not a valid option.");
+    }
+}
+```
